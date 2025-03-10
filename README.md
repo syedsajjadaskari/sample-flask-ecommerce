@@ -61,8 +61,10 @@ WTForms==3.2.1
    ```
    which gunicorn
    #copy the path
-   path="what ever copy path paste it"
+   path="what ever copy path paste it" 
+   //make sure there is no space for example path=/home/azureuser/sample-flask-ecommerce/venv/bin/gunicorn
    sudo env PATH=$PATH gunicorn --bind 0.0.0.0:80 Market:app
+
    ```
 
 ## Usage
