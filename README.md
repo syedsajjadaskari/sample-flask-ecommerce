@@ -58,7 +58,7 @@ WTForms==3.2.1
    );
    ```
 5. Run the website.
-   ```bash
+   ```
    which gunicorn
    #copy the path
    path="what ever copy path paste it"
