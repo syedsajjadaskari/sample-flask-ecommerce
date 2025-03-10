@@ -80,8 +80,7 @@ The admin panel allows administrators to view and manage users and items. It als
 **Username:** admin  
 **Password:** admin  
 
-## To run the code with the gunicron
-which guni
+
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
