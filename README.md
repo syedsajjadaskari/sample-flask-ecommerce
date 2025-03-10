@@ -27,7 +27,7 @@ WTForms==3.2.1
 ## Installation
 1. Clone the repository.
    ```bash
-   git clone https://github.com/ahmednasser1601/e-commerce.git](https://github.com/syedsajjadaskari/sample-flask-ecommerce.git
+      https://github.com/syedsajjadaskari/sample-flask-ecommerce.git
    ```
 2. Install the dependencies.
    ```bash
