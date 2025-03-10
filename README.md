@@ -35,6 +35,7 @@ WTForms==3.2.1
    ```
 3. Create a database.
    ```bash
+   sudo apt install sqlite3
    sqlite3 e-commerce.db
    ```
 4. Create the tables.
@@ -74,8 +75,8 @@ The admin panel allows administrators to view and manage users and items. It als
 **Username:** admin  
 **Password:** admin  
 
-## Conclusion
-This is a simple e-commerce website built with Flask and SQLite. The website is easy to use and can be customized to meet your needs.
+## To run the code with the gunicron
+which guni
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
