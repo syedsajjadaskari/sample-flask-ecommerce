@@ -1,8 +1,9 @@
-E-Commerce Website
+# E-Commerce Website
+
 Simple e-commerce website built with Flask and SQLite. Allows users to register, login, and purchase items. Also has an admin panel that allows administrators to view and manage users and items.
 
-
-Dependencies
+## Dependencies
+```
 bcrypt==4.3.0
 blinker==1.9.0
 click==8.1.8
@@ -21,56 +22,61 @@ SQLAlchemy==2.0.38
 typing_extensions==4.12.2
 Werkzeug==3.1.3
 WTForms==3.2.1
+```
 
-
-Installation
+## Installation
 1. Clone the repository.
-git clone https://github.com/ahmednasser1601/e-commerce.git
+   ```bash
+   git clone https://github.com/ahmednasser1601/e-commerce.git](https://github.com/syedsajjadaskari/sample-flask-ecommerce.git
+   ```
 2. Install the dependencies.
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
 3. Create a database.
-sqlite3 e-commerce.db
+   ```bash
+   sqlite3 e-commerce.db
+   ```
 4. Create the tables.
-
+   ```sql
+   CREATE TABLE users (
+       id INTEGER PRIMARY KEY AUTOINCREMENT,
+       username TEXT UNIQUE NOT NULL,
+       email_address TEXT UNIQUE NOT NULL,
+       password_hash TEXT NOT NULL,
+       budget INTEGER NOT NULL DEFAULT 10000
+   );
    
-CREATE TABLE users (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    username TEXT UNIQUE NOT NULL,
-    email_address TEXT UNIQUE NOT NULL,
-    password_hash TEXT NOT NULL,
-    budget INTEGER NOT NULL DEFAULT 10000
-);
-
-CREATE TABLE items (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT UNIQUE NOT NULL,
-    barcode TEXT UNIQUE NOT NULL,
-    price INTEGER NOT NULL,
-    description TEXT NOT NULL,
-    owner INTEGER REFERENCES users (id)
-);
-
+   CREATE TABLE items (
+       id INTEGER PRIMARY KEY AUTOINCREMENT,
+       name TEXT UNIQUE NOT NULL,
+       barcode TEXT UNIQUE NOT NULL,
+       price INTEGER NOT NULL,
+       description TEXT NOT NULL,
+       owner INTEGER REFERENCES users (id)
+   );
+   ```
 5. Run the website.
-python main.py
-Usage
-Register for an account.
+   ```bash
+   python main.py
+   ```
 
-Login to your account.
+## Usage
+- Register for an account.
+- Login to your account.
+- Browse the items for sale.
+- Add items to your cart.
+- Checkout and pay for your items.
 
-Browse the items for sale.
-
-Add items to your cart.
-
-Checkout and pay for your items.
-
-Admin Panel
+## Admin Panel
 The admin panel allows administrators to view and manage users and items. It also has two tabs: "Control Users" and "Control Items" to easily view and manage.
 
-Username: admin
-Password: admin
-Conclusion
+**Username:** admin  
+**Password:** admin  
+
+## Conclusion
 This is a simple e-commerce website built with Flask and SQLite. The website is easy to use and can be customized to meet your needs.
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
