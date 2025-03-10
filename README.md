@@ -59,7 +59,10 @@ WTForms==3.2.1
    ```
 5. Run the website.
    ```bash
-   python main.py
+   which gunicorn
+   #copy the path
+   path="what ever copy path paste it"
+   sudo env PATH=$PATH gunicorn --bind 0.0.0.0:80 Market:app
    ```
 
 ## Usage
