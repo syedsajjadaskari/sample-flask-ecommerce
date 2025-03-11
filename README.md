@@ -38,6 +38,10 @@ WTForms==3.2.1
    sudo apt install sqlite3
    sqlite3 e-commerce.db
    ```
+   to exit from the sqlite 3
+   ```
+   .exit
+   ```
 4. Create the tables.
    ```sql
    CREATE TABLE users (
