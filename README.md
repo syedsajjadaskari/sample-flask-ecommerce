@@ -29,19 +29,21 @@ WTForms==3.2.1
    ```bash
       https://github.com/syedsajjadaskari/sample-flask-ecommerce.git
    ```
+   Create the virtualenv 
+   
 2. Install the dependencies.
    ```bash
    pip install -r requirements.txt
    ```
-3. Create a database.
+3. Create a local python database.
    ```bash
    sudo apt install sqlite3
+   ```
+   to enter into sqllite3
+   ```
    sqlite3 e-commerce.db
    ```
-   to exit from the sqlite 3
-   ```
-   .exit
-   ```
+
 4. Create the tables.
    ```sql
    CREATE TABLE users (
@@ -60,6 +62,10 @@ WTForms==3.2.1
        description TEXT NOT NULL,
        owner INTEGER REFERENCES users (id)
    );
+   ```
+   to exit from the sqlite 3
+   ```
+   .exit
    ```
 5. Run the website.
    ```
