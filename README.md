@@ -7,6 +7,7 @@ Simple e-commerce website built with Flask and SQLite. Allows users to register,
 bcrypt==4.3.0
 blinker==1.9.0
 click==8.1.8
+email-validator==2.2.0
 Flask==3.1.0
 Flask-Bcrypt==1.0.1
 Flask-Login==0.6.3
@@ -30,7 +31,7 @@ WTForms==3.2.1
       https://github.com/syedsajjadaskari/sample-flask-ecommerce.git
    ```
    Create the virtualenv 
-   
+
 2. Install the dependencies.
    ```bash
    pip install -r requirements.txt
@@ -72,7 +73,9 @@ WTForms==3.2.1
    which gunicorn
    #copy the path
    path="what ever copy path paste it" 
-   //make sure there is no space for example path=/home/azureuser/sample-flask-ecommerce/venv/bin/gunicorn
+   //make sure there is no space for example 
+   path=/home/azureuser/sample-flask-ecommerce/venv/bin/gunicorn
+
    sudo env PATH=$PATH gunicorn --bind 0.0.0.0:80 Market:app
 
    ```
